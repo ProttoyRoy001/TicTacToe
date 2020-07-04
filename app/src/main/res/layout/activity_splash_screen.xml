@@ -5,13 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash"
+    android:gravity="bottom"
     tools:context=".SplashScreen">
 
     <ProgressBar
         android:id="@+id/progressbarid"
-        android:layout_width="0dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        style="@android:style/Widget.ProgressBar.Horizontal">
+        android:layout_margin="0dp"
+        android:progressBackgroundTint="#f9f9f9"
+        android:progressTint="#02b3b9">
 
     </ProgressBar>
 
