@@ -61,7 +61,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         roundcount++;
 
-        i
+        if(checkForWin()){
+            if(player1Turn)
+            {
+                player1Wins();
+            }else{
+                player2Wins();
+            }
+        }else if (roundcount == 9){
+            draw();
+        }else {
+            player1Turn = !player1Turn;
+        }
+
 
     }
     private boolean checkForWin(){
@@ -99,5 +111,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 && !field[0][2].equals("")){
             return true;
         }
+        return  false;
     }
+    private void player1Wins(){}
+    private void player2Wins(){}
+    private void draw(){}
 }
